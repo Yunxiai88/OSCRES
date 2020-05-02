@@ -77,7 +77,7 @@ function sendChat() {
 
             //preloading image
             var image = "<img id='loading' src='" + loadingurl + "'/>"
-            var content = "<div id='" + seqno + "' class='col-md-2 chat-message'>" + image + "</div>";
+            var content = "<div id='" + seqno + "' class='chat-message'>" + image + "</div>";
             $("#chatContent").append(content)
 
             //set content bottom
