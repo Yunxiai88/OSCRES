@@ -69,19 +69,17 @@ body {
     padding-left: 50px;
     padding-right: 50px;
     margin-bottom: 12px;
-    cursor: pointer;
     /*font-size: 22px;*/
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
 }
   
 /* Hide the browser's default radio button */
 .container input {
     position: absolute;
     opacity: 0;
-    cursor: pointer;
     height: 0;
     width: 0;
 }
