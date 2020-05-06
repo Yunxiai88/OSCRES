@@ -44,7 +44,8 @@
 2.  generate a json key file in the Google Dialoge page:   
         General --> Service Account    
         Click the 3 dots --> generate key file   
-    name file as `project_key.json`, put it into `/SystemCode` folder     
+    name file as `project_key.json`, put it under `/SystemCode` folder    
+3. change the `DIALOGFLOW_PROJECT_ID` value inside  `/SystemCode/dialogflow_client.py` file to your actual dialogflow proejct ID
 
 # Run the application
     Run the applicaiton by below command in the proejct root directory
