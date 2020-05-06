@@ -15,8 +15,6 @@ def do_dialogflow_analysis(enquiry):
     session = session_client.session_path(DIALOGFLOW_PROJECT_ID, SESSION_ID)
 
     print('Session path: {}\n'.format(session))
-
-
     text_input = dialogflow.types.TextInput(text=enquiry, language_code=DIALOGFLOW_LANGUAGE_CODE)
     query_input = dialogflow.types.QueryInput(text=text_input)
     try:
@@ -25,5 +23,6 @@ def do_dialogflow_analysis(enquiry):
 
     except InvalidArgument:
         raise
-        
+    except:
+        raise Exception('Sorry I am not able to connect to the internet at the moment. Please try again later. Or use our recommendation system to help you.')
     return response

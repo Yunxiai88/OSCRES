@@ -124,7 +124,10 @@ def chat(request):
             raise Exception('Cannot detect enquiry')
 
         # get intent and slot detection from dialogflow client
-        response = do_dialogflow_analysis(enquiry_text)
+        try:
+            response = do_dialogflow_analysis(enquiry_text)
+        except Exception as e:
+            return HttpResponse(e.args[0])
 
         jsonObj = MessageToJson(response.query_result)  # type is google.cloud.dialogflow_v2.types.QueryResult
         response_json = json.loads(jsonObj)
@@ -135,7 +138,10 @@ def chat(request):
         print("parameters is {0}".format(parameters))
 
         # implement fulfillment
-        output = do_fulfillment(intent, parameters)
+        try:
+            output = do_fulfillment(intent, parameters)
+        except Exception as e:
+            return HttpResponse(e.args[0])
         return HttpResponse(output)
 
         

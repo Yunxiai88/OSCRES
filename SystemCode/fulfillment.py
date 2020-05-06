@@ -14,6 +14,7 @@ def join(list, attribute):
     return res
 
 def do_fulfillment(intent, params):
+
     if intent == 'GreetingIntent':
         response = "You can ask me anything you want to know about the universities. To see a list of sample questions, click the 'Sample Questions' button, or type 'sample questions'."
         return response
