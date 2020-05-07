@@ -63,7 +63,6 @@ body, html {height: 100%}
 .nonRadio{
     position: relative !important;
     opacity: 100 !important;
-    cursor: pointer !important;
     height: auto !important;
     width: auto !important;
 }
