@@ -14,6 +14,7 @@
                     sendChat()
                 }
             });
+            
             $("#sampleQuestions").click(() => {
                 if (!$("#sampleQuestions").prop("disabled")) {
                     sampleQuestions()
@@ -25,6 +26,28 @@
                 if (event.keyCode === 13) {
                     $("#sendChat").click();
                 }
+            });
+
+            $("#submit").click(() => {
+                var min_fee = $("#min_tution_fee").val()
+                var max_fee = $("#max_tution_fee").val()
+                if (min_fee && !max_fee) {
+                    $("#max_tution_fee").prop('required', true);
+                    return
+                }
+                if (max_fee && !min_fee) {
+                    $("#min_tution_fee").prop('required', true);
+                    return
+                }
+                if (min_fee > max_fee) {
+                    alert('min tution fee mush less than max tution fee.')
+                    return
+                }
+                $("#recommend_form").validate({
+                    submitHandler: function (form) {
+                        form.submit();
+                    }
+                })
             });
         }
     }
@@ -101,13 +124,13 @@ function sendChat() {
             //display based on response
             //array response
             var list = data.split('\n')
-            if (list.length >1) {
+            if (list.length > 1) {
 
                 for (i in list) {
                     if (list[i]) {
-                        var record = "<div class='line'>"+ list[i] + "</div>"
+                        var record = "<div class='line'>" + list[i] + "</div>"
                         $("#" + seqno).append(record)
-                        
+
                     }
                 }
             }
@@ -165,13 +188,13 @@ function sampleQuestions() {
             //display based on response
             //array response
             var list = data.split('\n')
-            if (list.length >1) {
+            if (list.length > 1) {
 
                 for (i in list) {
                     if (list[i]) {
-                        var record = "<div class='line'>"+ list[i] + "</div>"
+                        var record = "<div class='line'>" + list[i] + "</div>"
                         $("#" + seqno).append(record)
-                        
+
                     }
                 }
             }
