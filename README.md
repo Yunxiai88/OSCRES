@@ -31,15 +31,15 @@ This project aims to leverage the power of Artificial Intelligence to transform 
 <a href='www.google.com'>video and demo</a>    
 
 # SECTION 5 : INSTALLATION AND USER GUIDE
-please refer to `UserGuide\Installation_User_Guide.pdf`   
+please refer to <a href = 'UserGuide/Installation_User_Guide.pdf'> Installation_User_Guide.pdf </a>
 
 # SECTION 6 : PROJECT REPORT / PAPER
-please refer to `ProjectReport\ProjectReport.pdf`   
+please refer to <a href='ProjectReport/ProjectReport.pdf'>ProjectReport.pdf</a>
 
 # SECTION 7 : MISCELLANEOUS
-Refer to Github Folder: `Miscellaneous` folder   
-    `Chatbot_questions`   
-    `university.csv`   
+Refer to Github Folder: <a href = 'c'> Miscellaneous </a> folder     
+    <a href ='Miscellaneous/Chatbot_questions.txt'> Chatbot_questions.txt </a>   
+    <a href ='Miscellaneous/university.csv'> university.csv </a>   
 
 
 
