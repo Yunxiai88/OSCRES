@@ -1,54 +1,45 @@
+# SECTION 1 : PROJECT TITLE 
+# Overseas Study Course REcommendation Systems
+![picture](Miscellaneous/oscres.png)   
 
-## Developer Guide
+# SECTION 2 : EXECUTIVE SUMMARY / PAPER ABSTRACT 
+With globalization and ease of global mobility more students decided to pursue their education overseas, thus boosted the overseas education market, the majority of which are undergraduate students. This leads to raise in demand for overseas study consulting services. According to the non-profit organization NAFSA, Chinese students contributed US$13 billion to the US economy last year. Chinese students also made up 11 percent of all students in Australia in 2017 and many top universities have ‘extraordinary levels’ of exposure to the Chinese market, according to the Sydney-based Centre for Independent Studies.      
 
- The project was developed using python3, mysql, and Google DialogFlow.   
- Make sure you have python3 and anaconda installed. Then you can follow this guide to install the rest dependencies
+This project aims to leverage the power of Artificial Intelligence to transform the oversea study consultancy service. It is built to provide a one-stop oversea course recommendation and study aboard associated services for students who want to discover their enriching oversea study experience.    
 
-# Python library depencencies
-1. install python dependencies:  
-    `conda install django`  
-    `pip install djangorestframework`  
-    `conda install mysqlclient`  
-    `pip install google-api-core`  
-    `pip install dialogflow`  
-    `pip install pandas`
+# SECTION 3 : CREDITS / PROJECT CONTRIBUTION
+<table>
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Student ID</td>
+            <td>Contribution</td>
+            <td>Contact Email</td>
+        <tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Li Yuejun</td>
+            <td>A0213494E</td>
+            <td></td>
+            <td></td>
+        <tr>
+    </tbody>
+</table>
 
-2. instal pyknow:  
-    clone the pyknow repo:   
-        `git clone "https://github.com/buguroo/pyknow.git" pyknow`   
-    go to the created project directory `pyknow` and run `pip install .`  
+# SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
+<a href='www.google.com'>video and demo</a>    
 
-# Project Setup
-1. Clone the project repo "https://github.com/NormanLYJ/OSCRES.git"
+# SECTION 5 : INSTALLATION AND USER GUIDE
+please refer to <a href = 'UserGuide/Installation_User_Guide.pdf'> Installation_User_Guide.pdf </a>
 
-# Database
-1. install mysql  
-    make sure use legecy password authentication is used   
+# SECTION 6 : PROJECT REPORT / PAPER
+please refer to <a href='ProjectReport/ProjectReport.pdf'>ProjectReport.pdf</a>
 
-2. In `SystemCode/oscres/settings.py`, in the DATABASES section, modify the USER and PASSWORD based on what you have created.  
+# SECTION 7 : MISCELLANEOUS
+Refer to Github Folder: <a href = 'c'> Miscellaneous </a> folder     
+    <a href ='Miscellaneous/Chatbot_questions.txt'> Chatbot_questions.txt </a>   
+    <a href ='Miscellaneous/university.csv'> university.csv </a>   
 
-3. Similarly, in the `2_table_load.py` file, modify the username and password 
 
-3. connect to you mysql database using below command   
-    `mysql -u <USERNAME> -h localhost -p`      
-    then run the `0_database_creation.sql`    
-
-5. create database tables by executing below bash file
-    `1_table_setup.sh`  
-
-6. load data into mysql tables by 
-    `python 2_table_load.py`
-
-# Google DialogFlow
-1. zip the folder dialogflow_objects and import the zip file into your Google DialogFlow project
-2.  generate a json key file in the Google Dialoge page:   
-        General --> Service Account    
-        Click the 3 dots --> generate key file   
-    name file as `project_key.json`, put it under `/SystemCode` folder    
-3. change the `DIALOGFLOW_PROJECT_ID` value inside  `/SystemCode/dialogflow_client.py` file to your actual dialogflow proejct ID
-
-# Run the application
-    Run the applicaiton by below command in the proejct root directory
-    `python manage.py runserver 0.0.0.0:8000`   
-    or add debug configuration for your preferred IDE
 
