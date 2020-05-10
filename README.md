@@ -21,14 +21,32 @@ This project aims to leverage the power of Artificial Intelligence to transform 
         <tr>
             <td>Li Yuejun</td>
             <td>A0213494E</td>
-            <td></td>
-            <td></td>
+            <td>Project Proposal, SME interview and Modeling, System Architecture Design, Project setup, System development, Code repo management</td>
+            <td>e0508618@u.nus.edu</td>
+        <tr>
+        <tr>
+            <td>Zheng Bingbing</td>
+            <td>A0213517M</td>
+            <td>Data Acquisition, Intent Entity Creation, UI Design and Development, Mid-term Presentation, Report Writing, Video Creation</td>
+            <td>e0508618@u.nus.edu</td>
+        <tr>
+        <tr>
+            <td>Zheng Min</td>
+            <td>A0213482L</td>
+            <td>Data Acquisition, Rule-based model design and development, System Design, System build Test</td>
+            <td>e0508583@u.nus.edu</td>
+        <tr>
+        <tr>
+            <td>Zhu Weiwei</td>
+            <td>A0213545L</td>
+            <td>System design, Knowledge discovery, Project development, Feature implementatio</td>
+            <td>e0508646@u.nus.edu</td>
         <tr>
     </tbody>
 </table>
 
 # SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
-<a href='www.google.com'>video and demo</a>    
+<a href='https://youtu.be/fJA3l4uOefA'>video and demo</a>    
 
 # SECTION 5 : INSTALLATION AND USER GUIDE
 please refer to <a href = 'UserGuide/Installation_User_Guide.pdf'> Installation_User_Guide.pdf </a>
@@ -37,7 +55,7 @@ please refer to <a href = 'UserGuide/Installation_User_Guide.pdf'> Installation_
 please refer to <a href='ProjectReport/ProjectReport.pdf'>ProjectReport.pdf</a>
 
 # SECTION 7 : MISCELLANEOUS
-Refer to Github Folder: <a href = 'c'> Miscellaneous </a> folder     
+Refer to Github Folder: <a href = 'Miscellaneous'> Miscellaneous </a> folder     
     <a href ='Miscellaneous/Chatbot_questions.txt'> Chatbot_questions.txt </a>   
     <a href ='Miscellaneous/university.csv'> university.csv </a>   
 
