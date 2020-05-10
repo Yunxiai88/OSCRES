@@ -28,7 +28,7 @@
                 }
             });
 
-            $("#submit").click(() => {
+            $("#submit").click((e) => {
                 var min_fee = $("#min_tution_fee").val()
                 var max_fee = $("#max_tution_fee").val()
                 if (min_fee && !max_fee) {
@@ -41,6 +41,7 @@
                 }
                 if (min_fee > max_fee) {
                     alert('min tution fee mush less than max tution fee.')
+                    e.preventDefault()
                     return
                 }
                 $("#recommend_form").validate({
